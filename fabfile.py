@@ -106,7 +106,7 @@ LAMBDA_EXECUTION_ROLE_TRUST_POLICY = {
 }
 
 LAMBDA_FUNCTION_CONFIG = {
-    "s3_key_suffix_whitelist": ['.zip'],  # Only S3 keys with this URL will be accepted.
+    "s3_key_suffix_whitelist": ['.beer'],  # Only S3 keys with this URL will be accepted.
     "queue": '',  # To be filled in with the queue ARN.
     "task": ECS_TASK_NAME
 }

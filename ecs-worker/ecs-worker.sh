@@ -15,7 +15,7 @@
 #
 # Simple POV-Ray worker shell script.
 #
-# Uses the AWS CLI utility to fetch a message from SQS, fetch a ZIP file from S3 that was specified in the message,
+# Uses the AWS CLI utility to fetch a message from SQS, fetch a BEER file from S3 that was specified in the message,
 # render its contents with POV-Ray, then upload the resulting .png file to the same S3 bucket.
 #
 
@@ -58,7 +58,7 @@ while [ /bin/true ]; do
             -n "${key}" -a \
             -n "${base}" -a \
             -n "${ext}" -a \
-            "${ext}" = "zip" \
+            "${ext}" = "beer" \
         ]; then
             mkdir -p work
             pushd work
